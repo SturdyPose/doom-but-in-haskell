@@ -8,7 +8,7 @@
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
 #
-# snapshot: lts-22.28
+# snapshot: lts-21.23
 # snapshot: nightly-2024-07-05
 # snapshot: ghc-9.6.6
 #
@@ -31,6 +31,8 @@ snapshot:
 #   - wai
 packages:
 - .
+
+
 # Dependency packages to be pulled from upstream that are not in the snapshot.
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
@@ -41,6 +43,8 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 # extra-deps: []
+
+# extra-deps: - GLFW-0.5.2.5@sha256:06853ef61427078b773ff2043e1118aa53e42d08e5331e3d2b808705c75b6ffd,3444
 
 # Override default flag values for project packages and extra-deps
 # flags: {}
